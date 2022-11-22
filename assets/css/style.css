@@ -1,0 +1,96 @@
+/* 
+Font Family = SF Pro Text, Inter
+
+Primary Color = #F59232
+Secondary Color = #1B78BD
+Tertiary Color = #1D4B65 
+
+Bootstrap v5.2
+Font Awesome v6.2.1
+
+*/
+
+
+@font-face {
+  font-family: 'SFProText';
+  src: url('../fonts/SFProText_Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter.ttf');
+}
+
+
+
+body {
+  background: #1D4B65;
+}
+
+body, h1, h2, h3, h4, h5, h6, a, ul, li {
+  font-family: 'SFProText';
+}
+
+a, li, ul {
+  text-decoration: none;
+  transition: 0.3s all;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #F59232;
+  transition: 0.3s all;
+}
+
+.color-primary {
+  color: #F59232;
+}
+
+.color-secondary {
+  color: #1B78BD;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.color-black {
+  color: #000000;
+}
+
+.bg-prmary {
+  background: #1D4B65;
+}
+
+.bg-secondary {
+  background: #FDA54C;
+}
+
+.bg-transparent {
+  background: transparent;
+}
+
+.bg-white {
+  background: #ffffff;
+}
+
+.bg-black {
+  background: #000000;
+}
+
+.btn {
+  border-color: #ced4da;
+}
+
+
+
+/* NAVBAR START */
+
+.navbar-brand {
+  width: 240px;
+  overflow: hidden;
+}
+
+.navbar-brand img {
+  width: 100%;
+}
