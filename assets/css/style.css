@@ -268,6 +268,11 @@ nav li a span {
   color: #ff5d94;
 }
 
+.notification .dropdown-menu.show {
+  left: -100px;
+  top: 70px;
+}
+
 
 /* Mobile Navigation Start */
 
@@ -475,6 +480,20 @@ nav li a span {
 
 .overlay.fullScreenSearchBar button:hover {
   background: #bbb;
+}
+
+.overlay.fullScreenSearchBar input[type="text"] {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 0;
+}
+
+.overlay.fullScreenSearchBar button {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 0;
+  background: #FDA54C;
+  color: #fff;
 }
 
 
