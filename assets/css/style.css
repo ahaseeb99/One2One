@@ -204,6 +204,7 @@ nav li a span {
   top: 80px;
   visibility: visible;
   opacity: 1;
+  z-index: 99;
 }
 
 .profile_dropdown .menu::before {
@@ -273,8 +274,10 @@ nav li a span {
 
 /* Newsfeed Start */
 
+/* Right Hand Side Tab Start  */
+
 .NewsFeed {
-  padding: 100px 0;
+  padding: 52px 0;
 }
 
 .post {
@@ -282,6 +285,7 @@ nav li a span {
   min-height: 300px;
   border: 0;
   padding: 30px;
+  margin-bottom: 15px;
 }
 
 .post .postHeader {
@@ -477,7 +481,7 @@ nav li a span {
   margin: 20px 0;
 }
 
-.post .postFooter .postCommentWrap .commentSection .postCommentField{
+.post .postFooter .postCommentWrap .commentSection .postCommentField {
   width: 100%;
 }
 
@@ -502,3 +506,163 @@ nav li a span {
   display: flex;
   align-items: center;
 }
+
+.post .postFooter .postCommentWrap .postCommentSection {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.post .postFooter .postCommentWrap .postCommentSection .profileImg {
+  width: 60px;
+  overflow: hidden;
+  height: 60px;
+  border: 0;
+  border-radius: 100%;
+  margin-right: 15px;
+  transition: 0.3s all;
+}
+
+.post .postFooter .postCommentWrap .postCommentSection .profileImg img {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.post .postFooter .postCommentWrap .postCommentSection .postCommentMeta {
+  max-width: 80%;
+  padding: 20px;
+  background: #F1F2F2;
+  border-radius: 10px;
+  min-width: 10%;
+}
+
+
+.post .postFooter .postCommentWrap .postCommentSection .postCommentMeta .commenterName {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #282829;
+}
+
+.post .postFooter .postCommentWrap .postCommentSection .postCommentMeta .postComment {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #636466;
+  margin: 0;
+}
+
+/* Right Hand Side Tab End  */
+
+/* Left Hand Side Tab Start  */
+
+.postInputTab {
+  border-radius: 20px;
+  min-height: 300px;
+  border: 0;
+  padding: 30px;
+  margin-bottom: 15px;
+  background: #FDA54C;
+}
+
+.postInputTab .askField {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.postInputTab .askField .postCommentField {
+  width: 100%;
+}
+
+.postInputTab .askField textarea {
+  height: 60px;
+  border-radius: 10px !important;
+  width: 100%;
+}
+
+.postInputTab .askField .profileImg {
+  min-width: 60px;
+  overflow: hidden;
+  height: 60px;
+  border: 0;
+  border-radius: 100%;
+  margin-right: 15px;
+  border: 3px solid #fcfcfc;
+}
+
+.postInputTab .askField .profileImg img {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.postInputTab .postTitle {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24.2894px;
+  line-height: 43px;
+  letter-spacing: 1.13857px;
+}
+
+.postInputTab .postCommentField .buttonMeta {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.postInputTab .postCommentField .buttonMeta .btn {
+  font-family: 'SFProText';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  background-color: transparent;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin: 5px;
+  border: 2px solid #fff;
+  transition: 0.3s all;
+  border-radius: 8px;
+  min-width: 90px;
+}
+
+.postInputTab .postCommentField .buttonMeta .btn i {
+  margin-right: 5px;
+}
+
+.postInputTab .postCommentField .buttonMeta .btn:hover {
+  background: #fff;
+  color: #FDA54C;
+  transition: 0.3s all;
+  border: 2px solid #F2994A;
+}
+
+.postInputTab .postCommentField .buttonMeta .btn:hover svg path {
+  fill: #FDA54C;
+}
+
+.advertPlacement .advertImg {
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.advertPlacement .advertImg img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Left Hand Side Tab End  */
+
+/* Newsfeed End */
+
+/* CONTENT AREA END */

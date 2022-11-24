@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1600px) {
+    .postInputTab .postCommentField .buttonMeta {
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 1366px) {
     nav li {
         padding: 2px;
@@ -26,6 +32,48 @@
         margin: 0 15px;
     }
 
+    /* CONTENT AREA START */
+
+    .post .postBody .postBodyProfileMedia {
+        height: 450px;
+    }
+
+    .postInputTab .askField .profileImg {
+        min-width: 100px;
+        height: 100px;
+        margin: 0 auto 15px auto;
+    }
+
+    .postInputTab .askField textarea {
+        height: 45px;
+    }
+
+    .postInputTab .askField {
+        display: flex;
+        align-items: flex-start;
+        margin: 20px 0;
+        flex-direction: column;
+    }
+
+    .postInputTab .postCommentField .buttonMeta {
+        display: block;
+        align-items: center;
+        margin: 15px 0;
+        position: relative;
+    }
+
+    .postInputTab .postTitle {
+        text-align: center;
+    }
+
+    .advertPlacement .advertImg {
+        height: 220px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -38,7 +86,7 @@
     .formNavSearch {
         width: 300px;
         border: 1px solid #333333;
-        border-radius: 50px;
+        border-radius: 100px;
         overflow: hidden;
         margin: auto;
         /* display: none; */
@@ -65,6 +113,28 @@
     }
 
     .navbar-nav .nav-item .nav-link span {
+        display: none;
+    }
+
+    /* CONTENT AREA START */
+
+    .postInputTab .askField .profileImg {
+        display: none;
+    }
+
+    .postInputTab .askField textarea {
+        height: 80px;
+    }
+
+    .postInputTab .postCommentField .buttonMeta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px 0;
+        position: relative;
+    }
+
+    .advertPlacement {
         display: none;
     }
 

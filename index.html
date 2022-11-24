@@ -196,9 +196,174 @@
     <section class="NewsFeed">
         <div class="container-fluid">
             <div class="row g-2">
-                <div class="col-sm-1 col-md-8 col-lg-8">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8 g-5 order-sm-2 order-md-1 order-lg-2 order-xl-1">
                     <div class="post card">
+                        <div class="postHeader">
+                            <div class="upvotedProfiles">
+                                <span>
+                                    <div class="profileImg">
+                                        <img src="assets/images/profile/user1.jpg" alt="">
+                                    </div>
+                                    <div class="profileImg2">
+                                        <img src="assets/images/profile/user2.jpg" alt="">
+                                    </div>
+                                </span>
+                                <div class="upvotedProfilesMsg">
+                                    Adam D’Angelo and Pete Lada upvoted · <a href="#">2h</a>
+                                </div>
+                            </div>
+                            <div class="close">
+                                <button type="button" class="btn btn-primary bg-white p-0 border-0">
+                                    <i>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.5 5.5L18.5 18.5" stroke="#636466" stroke-width="1.5"
+                                                stroke-linecap="round" />
+                                            <path d="M5.5 18.5L18.5 5.5" stroke="#636466" stroke-width="1.5"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="postBody">
+                            <div class="postBodyProfileInfo">
+                                <div class="profileImg">
+                                    <img src="assets/images/profile/user3.jpg" alt="">
+                                </div>
+                                <div class="postBodyProfileName">
+                                    <h5>
+                                        Pablo Garces ·
+                                        <a href="#">Follow</a>
+                                    </h5>
+                                    <h6>
+                                        <a href="#">Product Designer</a>
+                                        at
+                                        <a href="#">Quora</a> · Updated Saturday
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="postBodyProfileDescr">
+                                <h3>
+                                    This is a question or post title, what do you want to ask?
+                                </h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard. Lorem Ipsum has been the industry's standard
+                                </p>
+                            </div>
+                        </div>
+                        <div class="postFooter">
+                            <div class="postMetaWrap">
+                                <div class="postMeta">
+                                    <div class="metaText">
+                                        <i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18"
+                                                viewBox="0 0 20 18" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M10 1L1 12H7V17H13V12H19L10 1Z" stroke="#636466"
+                                                    stroke-width="1.5" stroke-linejoin="round" />
+                                            </svg>
+                                        </i>
+                                        Post Reach 105
+                                    </div>
+                                    <div class="metaText">
+                                        <i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
+                                                    stroke="#636466" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </i>
+                                        105
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="postCommentWrap">
+                                <div class="postMeta">
+                                    <button class="metaText btn border-0 bg-white">
+                                        <i>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14 10H18.764C19.1049 10 19.4401 10.0871 19.7378 10.2531C20.0355 10.4191 20.2859 10.6584 20.4651 10.9484C20.6444 11.2383 20.7465 11.5692 20.7619 11.9098C20.7773 12.2503 20.7054 12.5891 20.553 12.894L17.053 19.894C16.8869 20.2265 16.6314 20.5061 16.3152 20.7014C15.999 20.8968 15.6347 21.0002 15.263 21H11.246C11.083 21 10.92 20.98 10.761 20.94L7 20M14 10V5C14 4.46957 13.7893 3.96086 13.4142 3.58579C13.0391 3.21071 12.5304 3 12 3H11.905C11.405 3 11 3.405 11 3.905C11 4.619 10.789 5.317 10.392 5.911L7 11V20M14 10H12M7 20H5C4.46957 20 3.96086 19.7893 3.58579 19.4142C3.21071 19.0391 3 18.5304 3 18V12C3 11.4696 3.21071 10.9609 3.58579 10.5858C3.96086 10.2107 4.46957 10 5 10H7.5"
+                                                    stroke="#1B4B66" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </i>
+                                        Like · <span>15</span>
+                                    </button>
+                                    <button class="metaText btn border-0 bg-white">
+                                        <i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
+                                                    stroke="#1B4B66" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </i>
+                                        Comments · <span>5</span>
+                                    </button>
+                                    <button class="metaText btn border-0 bg-white">
+                                        <i>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12C9 11.76 8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5C21 3.34 19.66 2 18 2C16.34 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12C3 13.66 4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.35C15.11 18.56 15.08 18.78 15.08 19C15.08 20.61 16.39 21.92 18 21.92C19.61 21.92 20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08Z"
+                                                    fill="#1B4B66" fill-opacity="0.54" />
+                                            </svg>
+                                        </i>
+                                        Share
+                                    </button>
+                                </div>
+                                <div class="commentSection">
+                                    <div class="profileImg">
+                                        <img src="assets/images/profile/user.jpg" alt="">
+                                    </div>
+                                    <div class="postCommentField">
+                                        <input type="text" class="form-control bg-light rounded-3 border-0"
+                                            placeholder="Write a public comment…">
+                                    </div>
+                                </div>
 
+                                <hr>
+
+                                <div class="postCommentSection">
+                                    <div class="profileImg">
+                                        <img src="assets/images/profile/user3.jpg" alt="">
+                                    </div>
+                                    <div class="postCommentMeta">
+                                        <h6 class="commenterName">
+                                            Ariana D’Angelo
+                                        </h6>
+                                        <p class="postComment">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard. Lorem Ipsum has been the
+                                            industry's standard
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="postCommentSection">
+                                    <div class="profileImg">
+                                        <img src="assets/images/profile/user4.jpg" alt="">
+                                    </div>
+                                    <div class="postCommentMeta">
+                                        <h6 class="commenterName">
+                                            Morpheus
+                                        </h6>
+                                        <p class="postComment">
+                                            If Dreams Disappear, Then So Will Humanity.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post card">
                         <div class="postHeader">
                             <div class="upvotedProfiles">
                                 <span>
@@ -329,16 +494,268 @@
                                         <img src="assets/images/profile/user.jpg" alt="">
                                     </div>
                                     <div class="postCommentField">
-                                        <input type="text" class="form-control bg-light rounded-3 border-0" placeholder="Write a public comment…">
+                                        <input type="text" class="form-control bg-light rounded-3 border-0"
+                                            placeholder="Write a public comment…">
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <div class="postCommentSection">
+                                    <div class="profileImg">
+                                        <img src="assets/images/profile/user3.jpg" alt="">
+                                    </div>
+                                    <div class="postCommentMeta">
+                                        <h6 class="commenterName">
+                                            Ariana D’Angelo
+                                        </h6>
+                                        <p class="postComment">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard. Lorem Ipsum has been the
+                                            industry's standard
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="postCommentSection">
+                                    <div class="profileImg">
+                                        <img src="assets/images/profile/user4.jpg" alt="">
+                                    </div>
+                                    <div class="postCommentMeta">
+                                        <h6 class="commenterName">
+                                            Morpheus
+                                        </h6>
+                                        <p class="postComment">
+                                            If Dreams Disappear, Then So Will Humanity.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="post card">
+                        <div class="postHeader">
+                            <div class="upvotedProfiles">
+                                <span>
+                                    <div class="profileImg">
+                                        <img src="assets/images/profile/user1.jpg" alt="">
+                                    </div>
+                                    <div class="profileImg2">
+                                        <img src="assets/images/profile/user2.jpg" alt="">
+                                    </div>
+                                </span>
+                                <div class="upvotedProfilesMsg">
+                                    Adam D’Angelo and Pete Lada upvoted · <a href="#">2h</a>
+                                </div>
+                            </div>
+                            <div class="close">
+                                <button type="button" class="btn btn-primary bg-white p-0 border-0">
+                                    <i>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.5 5.5L18.5 18.5" stroke="#636466" stroke-width="1.5"
+                                                stroke-linecap="round" />
+                                            <path d="M5.5 18.5L18.5 5.5" stroke="#636466" stroke-width="1.5"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="postBody">
+                            <div class="postBodyProfileInfo">
+                                <div class="profileImg">
+                                    <img src="assets/images/profile/user3.jpg" alt="">
+                                </div>
+                                <div class="postBodyProfileName">
+                                    <h5>
+                                        Pablo Garces ·
+                                        <a href="#">Follow</a>
+                                    </h5>
+                                    <h6>
+                                        <a href="#">Product Designer</a>
+                                        at
+                                        <a href="#">Quora</a> · Updated Saturday
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="postBodyProfileDescr">
+                                <h3>
+                                    This is a question or post title, what do you want to ask?
+                                </h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard. Lorem Ipsum has been the industry's standard
+                                </p>
+                            </div>
+                            <div class="postBodyProfileMedia">
+                                <video class="video" width="100%" height="100%" controls autoplay muted loading="lazy">
+                                    <source src="assets/images/videos/video1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <div class="postFooter">
+                            <div class="postMetaWrap">
+                                <div class="postMeta">
+                                    <div class="metaText">
+                                        <i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18"
+                                                viewBox="0 0 20 18" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M10 1L1 12H7V17H13V12H19L10 1Z" stroke="#636466"
+                                                    stroke-width="1.5" stroke-linejoin="round" />
+                                            </svg>
+                                        </i>
+                                        Post Reach 105
+                                    </div>
+                                    <div class="metaText">
+                                        <i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
+                                                    stroke="#636466" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </i>
+                                        105
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="postCommentWrap">
+                                <div class="postMeta">
+                                    <button class="metaText btn border-0 bg-white">
+                                        <i>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14 10H18.764C19.1049 10 19.4401 10.0871 19.7378 10.2531C20.0355 10.4191 20.2859 10.6584 20.4651 10.9484C20.6444 11.2383 20.7465 11.5692 20.7619 11.9098C20.7773 12.2503 20.7054 12.5891 20.553 12.894L17.053 19.894C16.8869 20.2265 16.6314 20.5061 16.3152 20.7014C15.999 20.8968 15.6347 21.0002 15.263 21H11.246C11.083 21 10.92 20.98 10.761 20.94L7 20M14 10V5C14 4.46957 13.7893 3.96086 13.4142 3.58579C13.0391 3.21071 12.5304 3 12 3H11.905C11.405 3 11 3.405 11 3.905C11 4.619 10.789 5.317 10.392 5.911L7 11V20M14 10H12M7 20H5C4.46957 20 3.96086 19.7893 3.58579 19.4142C3.21071 19.0391 3 18.5304 3 18V12C3 11.4696 3.21071 10.9609 3.58579 10.5858C3.96086 10.2107 4.46957 10 5 10H7.5"
+                                                    stroke="#1B4B66" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </i>
+                                        Like · <span>15</span>
+                                    </button>
+                                    <button class="metaText btn border-0 bg-white">
+                                        <i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
+                                                    stroke="#1B4B66" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </i>
+                                        Comments · <span>5</span>
+                                    </button>
+                                    <button class="metaText btn border-0 bg-white">
+                                        <i>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12C9 11.76 8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5C21 3.34 19.66 2 18 2C16.34 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12C3 13.66 4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.35C15.11 18.56 15.08 18.78 15.08 19C15.08 20.61 16.39 21.92 18 21.92C19.61 21.92 20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08Z"
+                                                    fill="#1B4B66" fill-opacity="0.54" />
+                                            </svg>
+                                        </i>
+                                        Share
+                                    </button>
+                                </div>
+                                <div class="commentSection">
+                                    <div class="profileImg">
+                                        <img src="assets/images/profile/user.jpg" alt="">
+                                    </div>
+                                    <div class="postCommentField">
+                                        <input type="text" class="form-control bg-light rounded-3 border-0"
+                                            placeholder="Write a public comment…">
+                                    </div>
+                                </div>
 
+                                <hr>
+
+                                <div class="postCommentSection">
+                                    <div class="profileImg">
+                                        <img src="assets/images/profile/user3.jpg" alt="">
+                                    </div>
+                                    <div class="postCommentMeta">
+                                        <h6 class="commenterName">
+                                            Ariana D’Angelo
+                                        </h6>
+                                        <p class="postComment">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard. Lorem Ipsum has been the
+                                            industry's standard
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="postCommentSection">
+                                    <div class="profileImg">
+                                        <img src="assets/images/profile/user4.jpg" alt="">
+                                    </div>
+                                    <div class="postCommentMeta">
+                                        <h6 class="commenterName">
+                                            Morpheus
+                                        </h6>
+                                        <p class="postComment">
+                                            If Dreams Disappear, Then So Will Humanity.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-1 col-md-4 col-lg-4">
-                    <div class="p-3 border bg-light">Row column</div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 g-5 order-sm-1 order-md-2 order-lg-1 order-xl-2">
+                    <div class="postInputTab">
+                        <h3 class="postTitle">Ask Question:</h3>
+
+                        <div class="askField">
+                            <div class="profileImg">
+                                <img src="assets/images/profile/user.jpg" alt="">
+                            </div>
+                            <div class="postCommentField">
+                                <textarea type="text" class="form-control bg-light rounded-3 border-0"
+                                    placeholder="Hello where can i find this?"></textarea>
+
+                                <div class="buttonMeta">
+                                    <button class="btn askBtn">
+                                        <i>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M17 3V12C17 12.55 16.55 13 16 13H6L2 17V3C2 2.45 2.45 2 3 2H16C16.55 2 17 2.45 17 3ZM19 6H21C21.55 6 22 6.45 22 7V22L18 18H7C6.45 18 6 17.55 6 17V15H19V6Z"
+                                                    fill="#fff" />
+                                            </svg>
+                                        </i>
+                                        Ask
+                                    </button>
+
+                                    <button class="btn askBtn">
+                                        <i>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M17 3V12C17 12.55 16.55 13 16 13H6L2 17V3C2 2.45 2.45 2 3 2H16C16.55 2 17 2.45 17 3ZM19 6H21C21.55 6 22 6.45 22 7V22L18 18H7C6.45 18 6 17.55 6 17V15H19V6Z"
+                                                    fill="#fff" />
+                                            </svg>
+                                        </i>
+                                        Ask Anonymously
+                                    </button>
+
+                                    <div class="fileUpload">
+                                        <input type="file" id="upload" hidden />
+                                        <label class="btn" for="upload">Attach Media</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="advertPlacement post bg-white">
+                        <div class="advertImg">
+                            <img src="assets/images/newsfeed/advertising.png" alt="">
+                        </div>
+                    </div>
                 </div>
 
             </div>
