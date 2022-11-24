@@ -290,16 +290,35 @@
     }
 
 
+    .postInputTab .postCommentField .buttonMeta .btn {
+        width: 100%;
+    }
+
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 375px) {
 
     .postInputTab .postCommentField .buttonMeta {
         text-align: center;
     }
 
-    .postInputTab .postCommentField .buttonMeta .btn {
-        width: 100%;
+    .post .postFooter .postCommentWrap .postMeta .metaText {
+        --bs-btn-padding-x: 0.45rem !important;
+    }
+
+    .post .postBodyProfileInfo {
+        display: flex;
+        align-items: start;
+        margin: 15px 0;
+    }
+
+    .post .postBodyProfileInfo .profileImg {
+        width: 47px;
+        height: 40px;
+    }
+
+    .post .postFooter {
+        margin-top: 0;
     }
 
 }
