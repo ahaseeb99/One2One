@@ -98,6 +98,10 @@ a:hover {
 
 /* NAVBAR START */
 
+.mobileOnly {
+  display: none;
+}
+
 .navbar-brand {
   width: 200px;
   overflow: hidden;
@@ -158,7 +162,6 @@ nav li a span {
   margin-right: 0px;
   margin-left: auto;
 }
-
 
 .profile .dropdown {
   margin: 0 15px;
@@ -265,6 +268,230 @@ nav li a span {
   color: #ff5d94;
 }
 
+
+/* Mobile Navigation Start */
+
+.mobileNav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobileNav .profile {
+  margin: 0px;
+}
+
+.mobileNav .rightDiv {
+  display: flex;
+  align-items: center;
+}
+
+.mobileNav .searchToggleBtn {
+  background: #fff;
+  border: 0;
+  padding: 0;
+}
+
+.profile_dropdown_mobile {
+  position: relative;
+}
+
+.profile_dropdown_mobile .profile_mobile {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.profile_dropdown_mobile .profile_mobile img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile_dropdown_mobile .menu_mobile {
+  position: absolute;
+  top: 120px;
+  left: -5px;
+  padding: 10px;
+  background: #fff;
+  min-width: 300px;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.profile_dropdown_mobile .menu_mobile.active_mobile {
+  top: 80px;
+  visibility: visible;
+  opacity: 1;
+  z-index: 99;
+}
+
+.profile_dropdown_mobile .menu_mobile::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 28px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.profile_dropdown_mobile .menu_mobile h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.5em;
+}
+
+.profile_dropdown_mobile .menu_mobile h3 span {
+  font-size: 14px;
+  color: #cecece;
+  font-weight: 300;
+}
+
+.profile_dropdown_mobile .menu_mobile ul li {
+  list-style: none;
+  padding: 16px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+}
+
+.profile_dropdown_mobile .menu_mobile ul li img {
+  max-width: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.profile_dropdown_mobile .menu_mobile ul li:hover img {
+  opacity: 1;
+}
+
+.profile_dropdown_mobile .menu_mobile ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.profile_dropdown_mobile .menu_mobile ul li:hover a {
+  color: #ff5d94;
+}
+
+
+
+
+
+
+
+
+
+
+
+.openBtn {
+  background: #f1f1f1;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.openBtn:hover {
+  background: #bbb;
+}
+
+.overlay.fullScreenSearchBar {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.overlay.fullScreenSearchBar .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay.fullScreenSearchBar .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay.fullScreenSearchBar input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay.fullScreenSearchBar input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.overlay.fullScreenSearchBar button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay.fullScreenSearchBar button:hover {
+  background: #bbb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* NAVBAR END */
 
 
@@ -364,7 +591,7 @@ nav li a span {
 .post .postBodyProfileInfo {
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .post .postBodyProfileInfo .profileImg {
@@ -399,9 +626,9 @@ nav li a span {
   color: #636466;
 }
 
-.post .postBody .postBodyProfileDescr {
+/* .post .postBody .postBodyProfileDescr {
   margin: 30px 0;
-}
+} */
 
 .post .postBody .postBodyProfileDescr h3 {
   font-family: 'SF Pro Text';
@@ -434,7 +661,8 @@ nav li a span {
 }
 
 .post .postFooter .postMetaWrap .postMeta {
-  display: flex;
+  display: none;
+  /* display: flex; */
   align-items: center;
   justify-content: end;
 }
@@ -562,7 +790,7 @@ nav li a span {
 
 .postInputTab {
   border-radius: 20px;
-  min-height: 300px;
+  min-height: 250px;
   border: 0;
   padding: 30px;
   margin-bottom: 15px;
@@ -609,6 +837,7 @@ nav li a span {
   font-size: 24.2894px;
   line-height: 43px;
   letter-spacing: 1.13857px;
+  text-transform: uppercase;
 }
 
 .postInputTab .postCommentField .buttonMeta {
@@ -625,7 +854,7 @@ nav li a span {
   line-height: 30px;
   background-color: transparent;
   color: white;
-  padding: 5px 10px;
+  padding: 5px 8px;
   border-radius: 0.3rem;
   cursor: pointer;
   margin: 5px;
@@ -666,3 +895,40 @@ nav li a span {
 /* Newsfeed End */
 
 /* CONTENT AREA END */
+
+/* BOTTOM BAR START */
+
+.bottomBar.mobileOnly {
+  min-height: 60px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  color: white;
+  text-align: center;
+  z-index: 9;
+  padding: 6px 0;
+  /* display: flex;
+  align-items: center; */
+}
+
+.bottomBar .buttonMeta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottomBar .buttonMeta .bottomMenuBtn.askBtn {
+  border: 0;
+}
+
+.bottomBar .buttonMeta .bottomMenuBtn.askBtn svg {
+  width: 35px !important;
+  height: 35px !important;
+}
+
+.bottomBar .buttonMeta .bottomMenuBtn.askBtn.active i svg path {
+  stroke: #1B4B66;
+}
+
+/* BOTTOM BAR END */

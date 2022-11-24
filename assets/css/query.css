@@ -140,6 +140,166 @@
 
 }
 
-@media only screen and (max-width: 991px) {}
+@media only screen and (max-width: 991px) {
+    .NewsFeed .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
 
-@media only screen and (max-width: 560px) {}
+@media only screen and (max-width: 560px) {
+
+    .mDnone {
+        display: none;
+    }
+
+    .mobileOnly {
+        display: block;
+    }
+
+    .NewsFeed .row .col-sm-12.col-md-12.col-lg-12.col-xl-4.g-5,
+    .NewsFeed .row .col-sm-12.col-md-12.col-lg-12.col-xl-8.g-5 {
+        padding-right: calc(var(--bs-gutter-x) * .2);
+        padding-left: calc(var(--bs-gutter-x) * .2);
+    }
+
+    .post .postFooter .postMetaWrap .postMeta .metaText {
+        margin-left: 0;
+    }
+
+    .post .postFooter .postMetaWrap .postMeta {
+        justify-content: start;
+    }
+
+    .post .postFooter .postCommentWrap .commentSection .profileImg {
+        width: 80px;
+        height: 70px;
+        margin-right: 15px;
+    }
+
+    .post .postFooter .postCommentWrap .postCommentSection {
+        display: none;
+    }
+
+    .post .postBody .postBodyProfileMedia {
+        height: 300px;
+    }
+
+    .post .postBodyProfileInfo .postBodyProfileName h5 {
+        font-size: 20px;
+    }
+
+    .post .postBody .postBodyProfileDescr h3 {
+        font-size: 22px;
+    }
+
+    .post .postBody .postBodyProfileDescr p {
+        font-size: 16px;
+    }
+
+    .post .postBodyProfileInfo .profileImg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .post .postBodyProfileInfo .postBodyProfileName h6 {
+        font-size: 14px;
+    }
+
+    .postInputTab .askField textarea {
+        height: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 414px) {
+
+    .postInputTab .postCommentField .buttonMeta {
+        display: block;
+    }
+
+    .post .upvotedProfiles .upvotedProfilesMsg {
+        font-family: 'SF Pro Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        color: #939598;
+        position: relative;
+        left: -10px;
+    }
+
+    .post .postBodyProfileInfo .profileImg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .post .postBodyProfileInfo .postBodyProfileName h5 {
+        font-size: 16px;
+    }
+
+    .post .postBodyProfileInfo .postBodyProfileName h6 {
+        font-size: 12px;
+    }
+
+    .post .postBody .postBodyProfileDescr h3 {
+        font-size: 16px;
+    }
+
+    .post .postBody .postBodyProfileDescr p {
+        font-size: 14px;
+    }
+
+    .post .postFooter .postCommentWrap .postMeta .metaText {
+        font-size: 12px;
+    }
+
+    .post .postFooter .postCommentWrap .postMeta .metaText svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .post .postFooter .postMetaWrap .postMeta .metaText {
+        font-size: 12px;
+    }
+
+    .post .postFooter .postMetaWrap .postMeta .metaText svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .post .postFooter .postCommentWrap .commentSection .profileImg {
+        width: 50px;
+        height: 40px;
+        margin-right: 15px;
+    }
+
+    .post .postFooter .postCommentWrap .commentSection input {
+        height: 40px;
+        border-radius: 100px !important;
+        width: 100%;
+    }
+
+    .post .postHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .post .postBody .postBodyProfileMedia {
+        height: 200px;
+    }
+
+
+}
+
+@media only screen and (max-width: 414px) {
+
+    .postInputTab .postCommentField .buttonMeta {
+        text-align: center;
+    }
+
+    .postInputTab .postCommentField .buttonMeta .btn {
+        width: 100%;
+    }
+
+}
