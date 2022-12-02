@@ -1,5 +1,5 @@
 /* 
-Font Family = SF Pro Text, Inter
+Font Family = SFProText, Inter
 
 Primary Color = #F59232
 Secondary Color = #1B78BD
@@ -598,7 +598,7 @@ nav li a span {
 }
 
 .post .upvotedProfiles .upvotedProfilesMsg {
-  font-family: 'SF Pro Text';
+  font-family: 'SFProText';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -630,7 +630,7 @@ nav li a span {
 }
 
 .post .postBodyProfileInfo .postBodyProfileName h5 {
-  font-family: 'SF Pro Text';
+  font-family: 'SFProText';
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -638,7 +638,7 @@ nav li a span {
 }
 
 .post .postBodyProfileInfo .postBodyProfileName h6 {
-  font-family: 'SF Pro Text';
+  font-family: 'SFProText';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -650,14 +650,14 @@ nav li a span {
 } */
 
 .post .postBody .postBodyProfileDescr h3 {
-  font-family: 'SF Pro Text';
+  font-family: 'SFProText';
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
 }
 
 .post .postBody .postBodyProfileDescr p {
-  font-family: 'SF Pro Text';
+  font-family: 'SFProText';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -787,7 +787,7 @@ nav li a span {
 
 
 .post .postFooter .postCommentWrap .postCommentSection .postCommentMeta .commenterName {
-  font-family: 'SF Pro Text';
+  font-family: 'SFProText';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -795,7 +795,7 @@ nav li a span {
 }
 
 .post .postFooter .postCommentWrap .postCommentSection .postCommentMeta .postComment {
-  font-family: 'SF Pro Text';
+  font-family: 'SFProText';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -951,3 +951,486 @@ nav li a span {
 }
 
 /* BOTTOM BAR END */
+
+/* TOPIC PAGE START */
+
+.topic.card {
+  border-radius: 20px;
+  border: 0;
+  overflow: hidden;
+  margin-bottom: 15px;
+  background: #F59232;
+}
+
+.topic_image {
+  background: url("../images/topic/1.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+}
+
+.topic_image2 {
+  background: url("../images/topic/2.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+}
+
+.topic_image3 {
+  background: url("../images/topic/3.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+}
+
+.topic_footer {
+  padding: 15px;
+}
+
+.topic_footer .title {
+  color: #fff;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.topic_footer .meta_tags {
+  padding: 15px 0;
+}
+
+.topic_footer .meta_tags .btn {
+  font-family: 'SFProText';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  background-color: #0000;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  /* margin: 5px; */
+  border: 2px solid #fff;
+  transition: 0.3s all;
+  border-radius: 8px;
+  min-width: 90px;
+}
+
+.topic_footer .meta_tags .btn i {
+  margin-right: 5px;
+}
+
+.topic_footer .meta_tags .btn:hover svg path {
+  fill: #FDA54C;
+}
+
+.topic_footer .meta_tags .btn:hover {
+  background: #fff;
+  color: #FDA54C;
+  transition: 0.3s all;
+  border: 2px solid #F2994A;
+}
+
+/* TOPIC PAGE END */
+
+/* LOGIN PAGE START */
+
+.login {
+  position: absolute;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  top: 55%;
+  left: 50%;
+}
+
+.login .logBtn {
+  background-color: #1B4B66;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  background: #1B4B66 !important;
+  color: #fff !important;
+  font-family: 'SFProText';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 5px 8px;
+  cursor: pointer;
+  margin: 5px;
+  transition: 0.3s all;
+  border-radius: 8px;
+  min-width: 90px;
+}
+
+.login button:active {
+  transform: scale(0.95);
+}
+
+.login button:focus {
+  outline: none;
+}
+
+.login .ghost {
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  background: #ffffff;
+  color: #F59232;
+  font-family: 'SFProText';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 5px 8px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 8px;
+  min-width: 90px;
+  border: 0;
+}
+
+.login form {
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+
+.login input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.login .container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+
+.login .form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.login .sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.login .container.right-panel-active .sign-in-container {
+  transform: translateX(100%);
+}
+
+.login .sign-up-container {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.login .container.right-panel-active .sign-up-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: show 0.6s;
+}
+
+@keyframes show {
+  0%, 49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  50%, 100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+
+.login .overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.login .container.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
+
+.login .overlay {
+  background: #FF416C;
+  background: -webkit-linear-gradient(to right, #F59232, #D66100);
+  background: linear-gradient(to right, #F59232, #D66100);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #FFFFFF;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.login .container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.login .overlay-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.login .overlay-left {
+  transform: translateX(-20%);
+}
+
+.login .container.right-panel-active .overlay-left {
+  transform: translateX(0);
+}
+
+.login .overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.login .container.right-panel-active .overlay-right {
+  transform: translateX(20%);
+}
+
+.login .social-container {
+  margin: 20px 0;
+}
+
+.login .social-container a {
+  border: 2px solid #1B4B66;
+  border-radius: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+  color: #1B4B66;
+  transition: 0.3s all;
+}
+
+.login .social-container a:hover {
+  border: 2px solid #F59232;
+  color: #ffffff;
+  background: #F59232;
+  transition: 0.3s all;
+}
+
+/* LOGIN PAGE END */
+
+/* DISCOVER PAGE START */
+
+.popularQuestion {
+  background: #1B4B66;
+  min-height: 300px;
+  border: 0;
+  border-radius: 25px;
+  padding: 30px;
+  color: #fff;
+}
+
+.popularQuestion .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 20px 0;
+}
+
+.popularQuestion .questionList {
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+.popularQuestion .questionList .postBodyProfileInfo {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.popularQuestion .questionList .profileImg {
+  width: 65px;
+  height: 65px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+
+.popularQuestion .questionList .profileImg img {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.popularQuestion .questionList .postBodyProfileName h5 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6E7191;
+}
+
+.popularQuestion .questionList .postBodyProfileName p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6E7191;
+  margin: 0;
+}
+
+.popularReviewers {
+  background: #FDA54C;
+  min-height: 300px;
+  border: 0;
+  border-radius: 25px;
+  padding: 30px;
+  color: #fff;
+}
+
+.popularReviewers .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 20px 0;
+}
+
+.popularReviewers .questionList {
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+.popularReviewers .questionList .postBodyProfileInfo {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.popularReviewers .questionList .profileImg {
+  width: 65px;
+  height: 65px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+
+.popularReviewers .questionList .profileImg img {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.popularReviewers .questionList .postBodyProfileName h5 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6E7191;
+}
+
+.popularReviewers .questionList .postBodyProfileName p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6E7191;
+  margin: 0;
+}
+
+.listBuisiness {
+  background: #ffffff;
+  min-height: 300px;
+  border: 0;
+  border-radius: 25px;
+  padding: 30px;
+  color: #fff;
+}
+
+.listBuisiness .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 20px 0;
+  color: #282829;
+}
+
+.listBuisiness .logoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 200px;
+  max-width: 300px;
+  margin: 10px;
+  background: #f1f1f1;
+}
+
+.listBuisiness .logoDiv .logoDivImg {
+  height: 150px;
+  width: 100%;
+  background: #ff0;
+  background: url("../images/logo/main_logo_dark.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+
+
+/* DISCOVER PAGE END */
